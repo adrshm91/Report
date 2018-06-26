@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{noauthor_impact_nodate}
+The {Impact} of {Driver} {Inattention} on {Near}-{Crash}/{Crash} {Risk}: {An}
+  {Analysis} {Using} the 100-{Car} {Naturalistic} {Driving} {Study} {Data},
+  \url{https://www.researchgate.net/publication/242182089_The_Impact_of_Driver_Inattention_on_Near-CrashCrash_Risk_An_Analysis_Using_the_100-Car_Naturalistic_Driving_Study_Data}
+
+\bibitem{lee_speech-based_2001}
+Lee, J.D., Caven, B., Haake, S., Brown, T.L.: Speech-based interaction with
+  in-vehicle computers: the effect of speech-based e-mail on drivers' attention
+  to the roadway. Human Factors  43(4),  631--640 (2001)
+
+\bibitem{liang_real-time_2007}
+Liang, Y., Reyes, M.L., Lee, J.D.: Real-{Time} {Detection} of {Driver}
+  {Cognitive} {Distraction} {Using} {Support} {Vector} {Machines}. IEEE
+  Transactions on Intelligent Transportation Systems  8(2),  340--350 (Jun
+  2007)
+
+\bibitem{liang_how_2012}
+Liang, Y., Lee, J.D., Yekhshatyan, L.: How dangerous is looking away from the
+  road? {Algorithms} predict crash risk from glance patterns in naturalistic
+  driving. Human Factors  54(6),  1104--1116 (Dec 2012)
+
+\bibitem{strayer_cell_2003}
+Strayer, D.L., Drews, F.A., Johnston, W.A.: Cell phone-induced failures of
+  visual attention during simulated driving. Journal of Experimental
+  Psychology. Applied  9(1),  23--32 (Mar 2003)
+
+\end{thebibliography}

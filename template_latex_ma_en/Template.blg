@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Template.aux
+The style file: splncs03.bst
+Database file #1: /Users/adarshmallandur/Desktop/bibliography.bib.bib
+Warning--to sort, need author or key in noauthor_impact_nodate
+You've used 5 entries,
+            2785 wiz_defined-function locations,
+            615 strings with 5644 characters,
+and the built_in function-call counts, 2965 in all, are:
+= -- 253
+> -- 74
+< -- 8
++ -- 32
+- -- 26
+* -- 194
+:= -- 353
+add.period$ -- 4
+call.type$ -- 5
+change.case$ -- 28
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 264
+empty$ -- 262
+format.name$ -- 30
+if$ -- 649
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 49
+newline$ -- 20
+num.names$ -- 8
+pop$ -- 81
+preamble$ -- 1
+purify$ -- 23
+quote$ -- 0
+skip$ -- 95
+stack$ -- 0
+substring$ -- 216
+swap$ -- 170
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 1
+while$ -- 24
+width$ -- 6
+write$ -- 50
+(There was 1 warning)

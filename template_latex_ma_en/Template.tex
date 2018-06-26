@@ -92,9 +92,9 @@ Supervising tutor: Stephen Helmert \\
 %---------------------------------------------------------
 
 \addchap*{Abstract}
-\blindtext
+Estimating the head pose of the driver is a crucial as well as one of the difficult problems in the task of driver attention monitoring systems, given the problems of occlusions, illumination changes and the different poses of the driver. Traditionally head pose is estimated by detecting facial landmarks and solving the problem of 2D to 3D correspondence. This is a fragile method since it depends entirely on the estimation of landmarks which is difficult especially when there are occlusions and variations in illuminations. In this research project, a more robust way of estimating the head pose is done by training a convolutional neural network through the method of transfer learning. The training of convolutional neural network from scratch is often strenuous and time-consuming. Transfer learning greatly reduces these efforts by pre-training the network on a large dataset and then use the network as a feature extractor for our tasks. In our case, a network pre-trained on ImageNet dataset is used as feature extractor and further trained on DrivFace, a dataset containing images sequences of subjects while driving in real scenarios. This network classifies the RGB images into three classes: looking left, looking front and looking right. Results show that the method of transfer learning overcomes a DeepaGaze, a head pose estimation framework trained on in-the-wild datasets.
 \\\\
-\textbf{Keywords: Keyword1, Keyword2, Keyword3, ...max 5}
+\textbf{Keywords: Convolutional neural networks, transfer learning, head pose estimation, deep learning}
 
 %---------------------------------------------------------
 % Table of Contents, List of figures, List of Tables
@@ -110,7 +110,7 @@ Supervising tutor: Stephen Helmert \\
 \twocolumn
 \addchap{List of Abbreviations}
 \begin{acronym}[Bash]
- \acro{KDE}{K Desktop Environment}
+ \acro{ADAS}{Advanced Driver Assistance Systems}
  \acro{SQL}{Structured Query Language}
  \acro{Bash}{Bourne-again shell}
  \acro{JDK}{Java Development Kit}
@@ -154,7 +154,7 @@ Supervising tutor: Stephen Helmert \\
 %---------------------------------------------------------
 
 \chapter{Introduction}
-\input{src/intro}  % Load Data from File intro.tex
+ Driver attention monitoring in real time is a crucial task of advanced driver assistance systems. The driver drowsiness and distraction from the road increases the risk of accident significantly \cite{noauthor_impact_nodate} \cite{liang_how_2012}. The use of in-vehicle information systems (IVISs) such as cell phones, GPS navigation systems, and satellite radios further adds to the risk. \cite{strayer_cell_2003} \cite{lee_speech-based_2001}  There has been lot of work done in developing driver attention monitoring in the context of Advanced Driver Assistance Systems(ADAS) \cite{liang_real-time_2007}
 
 \chapter{Tables}
 \input{src/example_tables} % Load Data from File example_tables
@@ -165,13 +165,13 @@ Supervising tutor: Stephen Helmert \\
 \chapter{Referencing}
 % Alternativ just write your text under \chapter like this example
 
-\blindtext \cite{autorenrichtlinien}
+\blindtext 
 
 \blindtext \footnote{Here is an area for your Notes}
 
-\blindtext \footnote{\cite{lnilatex} Seite 11}
-\blindtext \cite{lnilatex}
-\blindtext \cite{autorenrichtlinien,pepper1992grundlagen,chen2001audiovisual}
+\blindtext \footnote{Seite 11}
+\blindtext 
+\blindtext 
 
 
 \chapter{Subchapter}
@@ -191,7 +191,7 @@ Supervising tutor: Stephen Helmert \\
 %---------------------------------------------------------
 
 \bibliographystyle{splncs03}
-\bibliography{bibliography}
+\bibliography{/Users/adarshmallandur/Desktop/bibliography.bib}
 
 \printindex
 
