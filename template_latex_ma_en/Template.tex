@@ -92,7 +92,7 @@ Supervising tutor: Stephen Helmert \\
 %---------------------------------------------------------
 
 \addchap*{Abstract}
-Estimating the head pose of the driver is a crucial as well as one of the difficult problems in the task of driver attention monitoring systems, given the problems of occlusions, illumination changes and the different poses of the driver. It is useful especially in highly autonomous vehicles where the handoff time to human driver needs to be determined. Traditionally head pose is estimated by detecting facial landmarks and solving the problem of 2D to 3D correspondence. This is a fragile method since it depends entirely on the estimation of landmarks which is difficult especially when there are occlusions and variations in illuminations. In this research project, a more robust way of estimating the head pose is done by training a convolutional neural network through the method of transfer learning. The training of convolutional neural network from scratch is often strenuous and time-consuming. Transfer learning greatly reduces these efforts by pre-training the network on a large dataset and then use the network as a feature extractor for our tasks. In our case, a network pre-trained on ImageNet dataset is used as feature extractor and further trained on DrivFace, a dataset containing images sequences of subjects while driving in real scenarios. This network classifies the RGB images into three classes: looking left, looking front and looking right. Results show that the method of transfer learning overcomes a DeepaGaze, a head pose estimation framework trained on in-the-wild datasets.
+Estimating the head pose of the driver is a crucial as well as one of the difficult problems in the task of driver attention monitoring systems, given the problems of occlusions, illumination changes and the different poses of the driver. It is useful especially in highly autonomous vehicles where the handoff time to human driver needs to be determined. Traditionally head pose is estimated by detecting facial landmarks and solving the problem of 2D to 3D correspondence. This is a fragile method since it depends entirely on the estimation of landmarks which is difficult especially when there are occlusions and variations in illuminations. In this research project, a more robust way of estimating the head pose is done by training a convolutional neural network through the method of transfer learning. In our case, a network pre-trained on ImageNet dataset is used as feature extractor and further trained on DrivFace, a dataset containing images sequences of subjects while driving in real scenarios. This network classifies the RGB images into three classes: looking left, looking front and looking right. Results show that the method of transfer learning overcomes a DeepaGaze, a head pose estimation framework trained on in-the-wild datasets.
 \\\\
 \textbf{Keywords: Convolutional neural networks, transfer learning, head pose estimation, deep learning}
 
@@ -111,7 +111,7 @@ Estimating the head pose of the driver is a crucial as well as one of the diffic
 \addchap{List of Abbreviations}
 \begin{acronym}[Bash]
  \acro{ADAS}{Advanced Driver Assistance Systems}
- \acro{SQL}{Structured Query Language}
+ \acro{CNN}{Convolutional Neural Networks}
  \acro{Bash}{Bourne-again shell}
  \acro{JDK}{Java Development Kit}
  \acro{VM}{Virtuelle Maschine}
@@ -154,10 +154,61 @@ Estimating the head pose of the driver is a crucial as well as one of the diffic
 %---------------------------------------------------------
 
 \chapter{Introduction}
- Driver attention monitoring in real time is a crucial task of advanced driver assistance systems. The driver drowsiness and distraction from the road increases the risk of accident significantly \cite{noauthor_impact_nodate} \cite{liang_how_2012}. The use of in-vehicle information systems (IVISs) such as cell phones, GPS navigation systems, and satellite radios further adds to the risk. \cite{strayer_cell_2003} \cite{lee_speech-based_2001}  According to There has been lot of work done in developing driver attention monitoring in the context of Advanced Driver Assistance Systems(ADAS) \cite{liang_real-time_2007}
+ Driver attention monitoring in real time is a crucial task of advanced driver assistance systems. The driver drowsiness and distraction from the road increases the risk of accident significantly \cite{noauthor_impact_nodate} \cite{liang_how_2012}. The use of in-vehicle information systems (IVISs) such as cell phones, GPS navigation systems, and satellite radios further adds to the risk. \cite{strayer_cell_2003} \cite{lee_speech-based_2001}Hence it is necessary to design driver attention montoring systems. One way this could be helpful is to capture the driver distractions and alert the driver in case of dangerous situations. There has been lot of work done in developing driver attention monitoring in the context of Advanced Driver Assistance Systems(ADAS) \cite{liang_real-time_2007} However, there is no system which generalises the driver head pose estimation across various drivers, cars and perspectives. Convolutional Neural Networks (CNNs) have been successful in various image classification and object detection tasks \cite. In this project, the feasibility of CNNs in driver monitoring systems is analysed. 
+ 
+\section{Problem statement}
+ 
+The aim of this project is to use CNNs to classify the driver gaze zones. However training CNNs from scratch is often time consuming and difficult. It requires learning of millions of parameters and a large number of annotated images for training. Training CNNs for smaller datasets often leads to overfitting. Transfer learning solves this problem by using pre trained weights learnt by CNNs on large scale datasets. \cite In this project, two different networks trained on the ImageNet \cite dataset is fine tuned to classify driver gaze zones in the DrivFace dataset \cite. The DrivFace database  \cite contains images sequences of subjects while driving in real scenarios. It is composed of 606 samples of 640*480 pixels each, acquired over different days from 4 drivers (2 women and 2 men) with several facial features like glasses and beard. The performance of the transfer learning network on DrivFace dataset is compared against Deepgaze \cite , a CNN trained on AFLW dataset \cite .
 
-\chapter{Tables}
-\input{src/example_tables} % Load Data from File example_tables
+\section{Structure of the project}
+The main focus of this project work can be summarised as
+
+\begin{enumerate}
+	\item To study the application of CNNs in head pose estimation of driver inside a car and to verify the robustness of the algorithm against occlusions, illumination changes and different poses of the driver.
+	\item To train and validate the CNN using the approach of transfer learning on the DrivFace \cite dataset with real time dashboard images of drivers inside a car.
+	\item To compare the performance of our CNN against Deepgaze \cite , a CNN trained on AFLW dataset \cite .
+	
+\end{enumerate}
+
+
+
+
+\chapter{Related work}
+% \input{src/example_tables} % Load Data from File example_tables
+\begin{center}
+\begin{tabular}{| p{5cm}| p{5cm}  | l | l |}
+\hline
+Research study & Objective & Classifier\\
+\hline
+Driver Gaze Zone Estimation using Convolutional Neural Networks:
+A General Framework and Ablative Analysis \cite{} & Gaze zone estimation
+using head pose dynamics & Random Forest\\
+\hline
+On Driver Gaze Estimation: Explorations and Fusion of Geometric and
+Data Driven Approaches \cite{} & Gaze zone estimation using fusion of geometric and learning based  method & SVM\\ 
+\hline
+Driver Gaze Region Estimation Without Using Eye Movement \cite{} & Gaze zone estimation
+using spatial configurations of facial landmarks & Random Forest\\
+\hline
+Head pose estimation in the wild using Convolutional Neural Networks and adaptive gradient methods \cite{} & Head pose estimation as yaw, pitch and roll angles & CNN\\
+\hline
+\end{tabular}
+\captionof{table}{Related research work on driver head pose estimation}
+\label{tab:table1}
+\end{center}
+
+\chapter{Background}
+ In this chapter we discuss the theoretical concepts of neural networks, computer vision and deep learning required for understanding the implementation of the project. First, the details of artificial intelligence, machine learning and deep learning are discussed. Finally, the application of deep learning to computer vision is examined in detail. 
+ 
+ \section{Machine learning}
+ 
+Machine learning is used to solve a wide variety of problems in computer vision, speech processing, statistics etc,. It is a subset of artificial intelligence where the computer is shown data to learn patterns and solve the given problem without being explicitly programmed to do so \cite. Computers have been successful in several tasks that were considered impossible by humans. However they fail to do simple tasks such as recognising objects or speech. Hence, machine learning algorithms were designed to infer the result from features of the input. In most of the cases these features needed to be hand-crafted by an expert. The algorithms work better when given better features. As the availability of data and the computational power has increased in the recent years, machine learning has become more and more practical and successful in various application domains.
+
+\subsection{Types}
+Machine learning algorithms can be broadly classified into supervised learning, unsupervised learning and reinforcement learning. In \textit{supervised learning} the algorithm is trained using labelled training data and then shown with test data to predict the results. For example, in object detection problems a training data set with annotated images is shown to the model through which the model learns the representations and the mapping from input to output. After training the model is able to predict the labels of unseen images. Supervised learning can be further classified into classification and regression. In \textit{classification}, the algorithm tries to predict the discrete output class the input belongs to, whereas in \textit{regression} the output is a continuous value. \textit{Unsupervised learning} is the process of building the model without the help of labelled data. It can also be considered as a problem of clustering a given dataset \cite. The machine learning algorithm needs to separate the set of data points into groups in the best way possible. \textit{Reinforcement learning} uses a system of rewards and punishments. The algorithm learns by interacting with its environment. The algorithm receives rewards for performing correctly and penalties for performing incorrectly. The algorithm learns without the intervention of human by maximising the rewards and minimising the penalties. 
+
+\subsection{Features}
+
 
 \chapter{Figures}
 \input{src/example_figures} % Load Data from File example_figures
