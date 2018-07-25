@@ -13,6 +13,7 @@
 \usepackage{blindtext}
 \usepackage{subfigure} 
 \usepackage{acronym}
+\usepackage{amsmath}
 
 \hypersetup{%
 bookmarksnumbered=true, hyperindex=true,
@@ -209,9 +210,112 @@ Machine learning algorithms can be broadly classified into supervised learning, 
 
 \subsection{Features}
 
+\section{The perceptron}
+An artificial neuron or perceptron is modelled similar to the neurons in the human brain. It takes several inputs and performs a weighted summation to produce an output. The weight of the perceptron is determined during the training stage. The training is performed using a method called \textit{gradient descent} which will be explained in later sections.  
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{image3.png}
+\caption{The perceptron}
+\label{fig:pic3}
+\end{figure}
+
+ The weighted sum is passed through a non-linear function called \textit{activation function} to capture the non-linearities in the input.  An \textit{activation function} decides whether a neuron should fire or not. There are various activation functions as shown in \ref{fig:act}. Sigmoid is useful for converting any value to probabilities and can be used for binary classification. The tanh maps input to a value in the range of -1 to 1 and are more stable than sigmoid. The ReLU maps input x to max (0, x) and works well for a large range of problems.
+ 
+\begin{figure}[h]
+    \subfigure[Sigmoid function]{\includegraphics[width=0.30\textwidth]{image4} \label{fig:pic4}}
+    \subfigure[Tanh function]{\includegraphics[width=0.30\textwidth]{image5}\label{fig:pic5}}
+    \subfigure[RELU function]{\includegraphics[width=0.30\textwidth]{image6}\label{fig:pic6}}
+\caption{Some common activation functions}
+\label{fig:act}
+\end{figure}
+
+
+ 
+
+\section{Artificial Neural Networks}
+
+Artificial neural network is a collection of perceptrons and activation functions. The perceptrons are connected to each other to form the hidden layers as shown in \ref{fig:pic7}. The training process determines the values of these weights and biases. The training is started by initialising the weights and biases to random values. The error is computed by taking the difference of the actual output to the ground truth. Based on the loss, the weights and biases are tuned in steps. The training is stopped when the error can be minimised anymore and during this point the model is said to learn the features in the input.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{image7.png}
+\caption{Artificial Neural Network}
+\label{fig:pic7}
+\end{figure}
+
+
+\section{Training the neural network}
+
+\subsection{Backpropagation}
+
+One of the commonly used algorithm for training the neural networks is the backpropagation algorithm. The weights are updated from the back based on the error that is calculated. The weights are updated using the gradient descent algorithm which is explained in the following section.
+
+\subsection{Gradient Descent}
+
+Often in machine learning, finding the best model for a certain situation means to minimise the error of the model or maximise the likelihood of the data. Hence it can be seen as finding the solution for an optimisation problem. Gradient descent is one of the optimisation problems which is widely used in the algorithms of machine learning and deep learning. 
+
+\subsubsection{Idea}
+
+Suppose we have some function \textbf{f(x)} that takes as input a vector of real numbers and outputs a single real number. One such simple function is given in equation \ref{gradient}. 
+
+\begin{equation} \label{gradient}
+f(x) = x^2  \in R
+\end{equation}
+
+The \textit{gradient} of \textbf{f(x)} gives the input direction in which the function \textbf{f(x)} most quickly increases. One approach to maximising a function is to pick a random starting point, compute the gradient, take a small step in the direction of the gradient, and repeat with the new starting point. Similarly, we can try to minimise a function by taking small steps in the opposite direction, as shown in \ref{fig:pic0}. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{image1.png}
+\caption{Finding a minimum using gradient descent}
+\label{fig:pic0}
+\end{figure}
+
+This procedure will work very well if the function has a unique global minimum. If a function has multiple (local) minima, this procedure might find the wrong one of them, in which case we might re-run the procedure from a variety of starting points. If a function has no minimum, then it is possible the procedure might go on forever.
+
+\subsubsection{Estimating the gradient}
+
+
+If f is a function of one variable, its derivative at a point x measures how f(x) changes when we make a very small change to x. The derivative is the slope of the tangent line at (x, f(x)). The gradient can be estimated as given in \ref{eqn:2} by considering h to be very small.
+
+\begin{equation} \label{eqn:2}
+Gradient = \frac{f(x+h) - f(x)}{h}
+\end{equation}
+
+If f is a function of multiple variables then it has multiple partial derivatives each indicating the change in f when we make small changes to one of the input variables by holding the other variables constant. The learning rate $\eta$ determines the size of the steps we take to reach a (local) minimum. There are three variants of gradient descent as explained in the following sections.
+
+\subsubsection{Batch gradient descent}
+
+Batch gradient descent or vanilla gradient descent calculates the gradient of the cost function w.r.t the parameters $\theta$ for the entire training dataset. 
+
+\begin{equation} \label{eqn:3}
+\theta = \theta - \eta \cdot \Delta_{\theta} J(\theta)
+\end{equation}
+
+Batch gradient descent is slow since we need to calculate the gradients for the whole dataset to make just one update of the parameters. Batch gradient descent is guaranteed to converge to the global minimum for convex error surfaces and to a local minimum for non-convex surfaces.
+
+\subsubsection{Stochastic gradient descent}
+
+Stochastic gradient descent (SGD) performs parameter update for each training sample. Batch gradient descent performs redundant computations for large gradients since it recomputes the gradients for similar examples before each update. SGD does not have this problem since it performs one update for each training data and is much faster. These frequent updates cause the objective function to fluctuate which may lead to overshooting. However, by setting the optimal learning rate, SGD can show same behaviour as the batch gradient descent.
+
+\begin{equation} \label{eqn:4}
+\theta = \theta - \eta \cdot \Delta_{\theta} J(\theta; x^{(i)}; y^{(i)})
+\end{equation}
+
+
+\subsubsection{Mini-batch gradient descent}
+
+Mini-batch gradient descent takes the best of SGD and batch gradient descent. It updates the parameters for every mini-batch of \textit{n} training samples. It reduces the variance of the parameter updates and hence more stable convergence. It also makes computations more efficient. 
+
+\begin{equation} \label{eqn:5}
+\theta = \theta - \eta \cdot \Delta_{\theta} J(\theta; x^{(i:i+n)}; y^{(i:i+n)})
+\end{equation}
+
 
 \chapter{Figures}
-\input{src/example_figures} % Load Data from File example_figures
+%\input{src/example_figures} % Load Data from File example_figures
 
 \chapter{Referencing}
 % Alternativ just write your text under \chapter like this example

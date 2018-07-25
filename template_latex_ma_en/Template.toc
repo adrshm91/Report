@@ -9,11 +9,22 @@
 \contentsline {chapter}{\numberline {3}Background}{10}{chapter.3}
 \contentsline {section}{\numberline {3.1}Machine learning}{10}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Types}{10}{subsection.3.1.1}
-\contentsline {chapter}{\numberline {4}Figures}{12}{chapter.4}
-\contentsline {chapter}{\numberline {5}Referencing}{14}{chapter.5}
-\contentsline {chapter}{\numberline {6}Subchapter}{16}{chapter.6}
-\contentsline {section}{\numberline {6.1}sub 1}{16}{section.6.1}
-\contentsline {section}{\numberline {6.2}sub 2}{16}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}sub 2.1}{17}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}sub 2.2}{18}{subsection.6.2.2}
-\contentsline {chapter}{Bibliography}{20}{chapter*.6}
+\contentsline {subsection}{\numberline {3.1.2}Features}{11}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}The perceptron}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Artificial Neural Networks}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Training the neural network}{12}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Backpropagation}{12}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Gradient Descent}{12}{subsection.3.4.2}
+\contentsline {subsubsection}{\nonumberline Idea}{13}{section*.6}
+\contentsline {subsubsection}{\nonumberline Estimating the gradient}{13}{section*.7}
+\contentsline {subsubsection}{\nonumberline Batch gradient descent}{14}{section*.8}
+\contentsline {subsubsection}{\nonumberline Stochastic gradient descent}{14}{section*.9}
+\contentsline {subsubsection}{\nonumberline Mini-batch gradient descent}{14}{section*.10}
+\contentsline {chapter}{\numberline {4}Figures}{15}{chapter.4}
+\contentsline {chapter}{\numberline {5}Referencing}{16}{chapter.5}
+\contentsline {chapter}{\numberline {6}Subchapter}{18}{chapter.6}
+\contentsline {section}{\numberline {6.1}sub 1}{18}{section.6.1}
+\contentsline {section}{\numberline {6.2}sub 2}{18}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}sub 2.1}{19}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}sub 2.2}{20}{subsection.6.2.2}
+\contentsline {chapter}{Bibliography}{22}{chapter*.11}
