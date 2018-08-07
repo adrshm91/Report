@@ -210,6 +210,8 @@ Machine learning algorithms can be broadly classified into supervised learning, 
 
 \subsection{Features}
 
+Features are the attributes in the data which are most relevant to the machine learning problem. Selection of features which enhance the performance of the model is a crucial step in machine learning. Feature selection methods are used to remove redundant and irrelevant attributes from data that either do not contribute to the accuracy of the model or may even decrease the accuracy of the model. There are different feature selection techniques such as 
+
 \section{The perceptron}
 An artificial neuron or perceptron is modelled similar to the neurons in the human brain. It takes several inputs and performs a weighted summation to produce an output. The weight of the perceptron is determined during the training stage. The training is performed using a method called \textit{gradient descent} which will be explained in later sections.  
 
@@ -286,7 +288,9 @@ Gradient = \frac{f(x+h) - f(x)}{h}
 
 If f is a function of multiple variables then it has multiple partial derivatives each indicating the change in f when we make small changes to one of the input variables by holding the other variables constant. The learning rate $\eta$ determines the size of the steps we take to reach a (local) minimum. There are three variants of gradient descent as explained in the following sections.
 
-\subsubsection{Batch gradient descent}
+\section{Types of gradient descents }
+
+\subsection{Batch gradient descent}
 
 Batch gradient descent or vanilla gradient descent calculates the gradient of the cost function w.r.t the parameters $\theta$ for the entire training dataset. 
 
@@ -296,7 +300,7 @@ Batch gradient descent or vanilla gradient descent calculates the gradient of th
 
 Batch gradient descent is slow since we need to calculate the gradients for the whole dataset to make just one update of the parameters. Batch gradient descent is guaranteed to converge to the global minimum for convex error surfaces and to a local minimum for non-convex surfaces.
 
-\subsubsection{Stochastic gradient descent}
+\subsection{Stochastic gradient descent}
 
 Stochastic gradient descent (SGD) performs parameter update for each training sample. Batch gradient descent performs redundant computations for large gradients since it recomputes the gradients for similar examples before each update. SGD does not have this problem since it performs one update for each training data and is much faster. These frequent updates cause the objective function to fluctuate which may lead to overshooting. However, by setting the optimal learning rate, SGD can show same behaviour as the batch gradient descent.
 
@@ -305,13 +309,39 @@ Stochastic gradient descent (SGD) performs parameter update for each training sa
 \end{equation}
 
 
-\subsubsection{Mini-batch gradient descent}
+\subsection{Mini-batch gradient descent}
 
 Mini-batch gradient descent takes the best of SGD and batch gradient descent. It updates the parameters for every mini-batch of \textit{n} training samples. It reduces the variance of the parameter updates and hence more stable convergence. It also makes computations more efficient. 
 
 \begin{equation} \label{eqn:5}
 \theta = \theta - \eta \cdot \Delta_{\theta} J(\theta; x^{(i:i+n)}; y^{(i:i+n)})
 \end{equation}
+
+
+\subsubsection{Challenges of mini-batch gradient descent}
+
+\begin{itemize}
+	\item Finding the optimum learning rate is difficult. A learning rate which is too small will take lots of time to converge and a learning rate too fast might overshoot and oscillate around the minimum.
+	\item Neural networks usually have highly non-convex error functions with saddle points. These are the points where one dimension slopes up and another slopes down. The SGD finds these points very hard to escape since the gradient is close to zero in all dimensions.
+\end{itemize}
+
+\chapter{Convolutional Neural Networks}
+
+Convolutional neural networks are very similar to the perceptron. They are made up of neurons with weights and biases. Each neuron performs a product of the input with the weights and adds a non-linearity at the end. They have loss functions and a fully connected layers at the end. However, in convolutional neural networks the inputs are exclusively images which makes the forward propagation easier to implement and also reduces the number of parameters in the network.
+
+\subsection{Architecture}
+
+The regular neural networks do not scale to full images since they have fully connected layers at the input. For example, an image of 240*480*3 would lead to neurons that have 240*480*3 weights. This would lead to a huge number of parameters and hence to overfitting. In a convolutional neural network, the neurons in a layer will only be connected to a small region of the layer before it, instead of a fully connected network. A convNet is made up of layers and each layer transforms an input 3D volume to an output 3D volume with some differentiable function.
+
+\subsection{Layers in convolutional neural networks}
+
+There are three main types of layers in a convNet: Convolutional layer, Pooling layer and a Fully-Connected layer. The first layer is the input layer which holds the raw pixel values of the image.
+
+\subsubsection{Convolution layer}
+
+
+
+
 
 
 \chapter{Figures}
@@ -345,8 +375,8 @@ Mini-batch gradient descent takes the best of SGD and batch gradient descent. It
 % bibliography based on Springer Design
 %---------------------------------------------------------
 
-\bibliographystyle{splncs03}
-\bibliography{/Users/adarshmallandur/Desktop/bibliography.bib}
+%\bibliographystyle{splncs03}
+%\bibliography{/Users/adarshmallandur/Desktop/bibliography.bib}
 
 \printindex
 
