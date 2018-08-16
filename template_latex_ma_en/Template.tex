@@ -14,6 +14,7 @@
 \usepackage{subfigure} 
 \usepackage{acronym}
 \usepackage{amsmath}
+\usepackage{gensymb}
 
 \hypersetup{%
 bookmarksnumbered=true, hyperindex=true,
@@ -325,21 +326,80 @@ Mini-batch gradient descent takes the best of SGD and batch gradient descent. It
 	\item Neural networks usually have highly non-convex error functions with saddle points. These are the points where one dimension slopes up and another slopes down. The SGD finds these points very hard to escape since the gradient is close to zero in all dimensions.
 \end{itemize}
 
-\chapter{Convolutional Neural Networks}
+\section{Convolutional Neural Networks}
 
 Convolutional neural networks are very similar to the perceptron. They are made up of neurons with weights and biases. Each neuron performs a product of the input with the weights and adds a non-linearity at the end. They have loss functions and a fully connected layers at the end. However, in convolutional neural networks the inputs are exclusively images which makes the forward propagation easier to implement and also reduces the number of parameters in the network.
 
-\subsection{Architecture}
 
-The regular neural networks do not scale to full images since they have fully connected layers at the input. For example, an image of 240*480*3 would lead to neurons that have 240*480*3 weights. This would lead to a huge number of parameters and hence to overfitting. In a convolutional neural network, the neurons in a layer will only be connected to a small region of the layer before it, instead of a fully connected network. A convNet is made up of layers and each layer transforms an input 3D volume to an output 3D volume with some differentiable function.
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{image8.png}
+\caption{Convolutional layers}
+\label{fig:pic8}
+\end{figure}
+%https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/
 
-\subsection{Layers in convolutional neural networks}
 
-There are three main types of layers in a convNet: Convolutional layer, Pooling layer and a Fully-Connected layer. The first layer is the input layer which holds the raw pixel values of the image.
-
-\subsubsection{Convolution layer}
+The regular neural networks do not scale to full images since they have fully connected layers at the input. For example, an image of 240*480*3 would lead to neurons that have 240*480*3 weights. This would lead to a huge number of parameters and hence to overfitting. In a convolutional neural network, the neurons in a layer will only be connected to a small region of the layer before it, instead of a fully connected network. A convNet is made up of layers and each layer transforms an input 3D volume to an output 3D volume with some differentiable function. The convolution and pooling layers act as feature extractors from the input image and the fully connected layer acts as a classifier. As shown in \ref{fig:pic8} the target probability is 1 for Boat class and 0 for other classes.
 
 
+\chapter{Transfer learning}
+
+Deep learning networks are \textit{data dependent}. The scale of the model and the size of the data is linearly dependent. Many domains face the problem of insufficient training data. Often the model faces situations where it has not seen the data before and deos not know how to deal with it. In all of such situations the current state-of-the-art models either show degraded performance or even break down. Transfer learning can help us deal with such scenarios.
+
+Tranfer learning allows us to use the already existing labeled data of some related task or domain. The name transfer learning is derived from the fact that we try to transfer as much knowledge as we can from the source to our target task or domain. 
+
+\section{Definition}
+
+Transfer learning involves a domain and a task. A domain \textbf{D} consists of a feature space \textbf{X} and a marginal probability distribution \textbf{P(X)} over the feature space. Given a domain, \textbf{D = (X, P(X))}, a task \textbf{T} consists of a label space \textbf{Y} and a conditional probability distribution \textbf{P(Y$\vert$X)} that is learnt from the training data. Given a source domain \textbf{Ds} and a corresponding source task \textbf{Ts} as well as a target domain \textbf{Dt} and a target task \textbf{Tt}, the objective of transfer learning is to enable to learn the target probability distribution \textbf{P(Yt$\vert$Xt)} in \textbf{Dt} with the information gained from \textbf{Ds} and \textbf{Ts} where  \textbf{Ds} $\neq$ \textbf{Ts} or \textbf{Ts} $\neq$ \textbf{Tt}. 
+
+Given source and target domains \textbf{Ds} and \textbf{Dt} where \textbf{D = (X, P(X))} and source and target tasks \textbf{ts} and \textbf{Tt} where \textbf{T = (Y, P(Y$\vert$X))} there can be four transfer learning scenarios.
+
+\begin{enumerate}
+	\item \textbf{Xs} $\neq$ \textbf{Xt}. The feature space of source and target domain are different. 
+	\item \textbf{P(Xs)} $\neq$ \textbf{P(Xt)}. Marginal probability distributions of source and target domain are different.
+	\item \textbf{Ys} $\neq$ \textbf{Yt}. The label spaces between the two tasks are different.
+	\item \textbf{P(Ys$\vert$Xs)} $\neq$ \textbf{P(Yt$\vert$Xt)}. The  conditional probability distributions of the source and target tasks are different.
+\end{enumerate}
+%Pan, S. J., & Yang, Q. (2010). A survey on transfer learning. IEEE Transactions on Knowledge and Data Engineering, 22(10), 1345–1359.
+
+\section{Transfer learning methods}
+
+Transfer learning has been investigated in the past \cite{}. With the approach of deep learning there are new methods of transfer learning available.
+
+\subsection{Using pre-trained CNN features}
+
+%Razavian, A. S., Azizpour, H., Sullivan, J., & Carlsson, S. (2014). CNN features off-the-shelf: An astounding baseline for recognition. IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, 512–519.
+
+This is the most common way of applying transfer learning for a given problem. It is also the method which has been used in this project. The lower layers of the convolutional neural networks capture the low-level image features such as edges, corners etc., while the higher convolutional layers capture more and more complex details such as body parts, faces etc. The final fully connected layers are assumed to capture information that is relevant to solving the respective task for example the classes in case of classification task.
+Thus we can simply use the features of a state-of-the-art CNN pre-trained on ImageNet \cite{} and train a new model on these extracted features. In practice, we keep the earlier layers of the CNN fixed or tune them with very low learning rate so as to not unlearn these features. This simple approach has been shown to achieve great results on various computer vision tasks \cite{}. Therefore, the ImageNet task seems to be a good base for general computer vision problems. 
+
+\subsection{By developing a model}
+
+In this method, a related predictive modelling problem with an abundance of data is selected and a model is developed based on this task. Then the model is either tuned or reused as is to a different task of interest. 
+
+\chapter{Method}
+
+The aim of the project is to classify the images into three categories based on the head orientation. For this task, the DrivFace dataset \cite{} is used which contains images of drivers while driving in real scenarios. We will first consider the data preprocessing, the model, the training and then the testing of the model.
+
+\section{DrivFace Dataset}
+
+The DrivFace database /cite{} contains images sequences of subjects while driving in real scenarios. It is composed of 606 samples of 640—480 pixels each, acquired over different days from 4 drivers (2 women and 2 men) with several facial features like glasses and beard. The ground truth contains the annotation of the face bounding box and the facial key points (eyes, nose and mouth). A set of labels assigning each image into 3 possible gaze direction classes are given.
+
+\begin{enumerate}
+	\item The first class is the looking-right class and contains the head angles between -45\degree and -30\degree.
+	\item The second one is the frontal class and contains the head angles between -15\degree and 15\degree.
+	\item The last one is the looking-left class and contains the head angles between 30\degree and 45\degree.
+\end{enumerate}
+ 
+
+\section{Preprocess the data}
+
+The data is first augumented using the keras class /textit{ImageDataGenerator}. The parameters of data augumentation are passed while creating an object of the class. Here we set the horizontal flip to false since we need to classify the images as looking left and looking right. We give some rotation ranges, width shift range, height shift range, shear range and zoom range. This generates different augumentated images of our dataset. The images before and after the data augumentation can be seen as below in \ref{}. Since the data set already contains the coordinates of the face annotations we use this to extract face from the images. We then split the dataset into train and test with a test data of 20%. 
+
+\section{Model}
+
+We have used three base models for transfer learning: Resnet, 
 
 
 
