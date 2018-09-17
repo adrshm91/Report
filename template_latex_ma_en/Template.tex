@@ -391,15 +391,53 @@ The DrivFace database /cite{} contains images sequences of subjects while drivin
 	\item The second one is the frontal class and contains the head angles between -15\degree and 15\degree.
 	\item The last one is the looking-left class and contains the head angles between 30\degree and 45\degree.
 \end{enumerate}
+
+%\begin{figure}[h]
+%    \subfigure[]{\includegraphics[width=0.37\textwidth]{f.jpg} \label{fig:pic1}}
+%    \subfigure[Augumented image]{\includegraphics[width=0.37\textwidth]{lr.jpg}\label{fig:pic7}}
+%    \subfigure[Augumented image]{\includegraphics[width=0.37\textwidth]{ll.jpg}\label{fig:pic7}}
+%\caption{Image augumentation}
+%\end{figure}
  
 
 \section{Preprocess the data}
 
-The data is first augumented using the keras class /textit{ImageDataGenerator}. The parameters of data augumentation are passed while creating an object of the class. Here we set the horizontal flip to false since we need to classify the images as looking left and looking right. We give some rotation ranges, width shift range, height shift range, shear range and zoom range. This generates different augumentated images of our dataset. The images before and after the data augumentation can be seen as below in \ref{}. Since the data set already contains the coordinates of the face annotations we use this to extract face from the images. We then split the dataset into train and test with a test data of 20%. 
+The data is first augumented using the keras class /textit{ImageDataGenerator}. The parameters of data augumentation are passed while creating an object of the class. Here we set the horizontal flip to false since we need to classify the images as looking left and looking right. We give some rotation ranges, width shift range, height shift range, shear range and zoom range. This generates different augumentated images of our dataset. The images before and after the data augumentation can be seen as below \ref{fig:pic7}. Since the data set already contains the coordinates of the face annotations we use this to extract face from the images. We then split the dataset into train and test with a test data of 20%. 
+
+\begin{figure}[h]
+    \subfigure[Original image]{\includegraphics[width=0.49\textwidth]{image10.jpg} \label{fig:pic1}}
+    \subfigure[Augumented image]{\includegraphics[width=0.37\textwidth]{image9.jpg}\label{fig:pic7}}
+\caption{Image augumentation}
+\end{figure}
+
+
 
 \section{Model}
 
-We have used three base models for transfer learning: Resnet, 
+We have tested the dataset on four models
+
+\begin{enumerate}
+	\item DeepGaze CNN model : The model is derived from the DeepGaze model \cite{}. There are 9 layers and 4,566,147 parameters. 
+	\item DeepGaze CNN model with data augumentation: The model is same as the first one but the data is augumented before training. 
+	\item Transfer learning with VGGNet: The model uses the first layers as the standard VGGNet model \cite{}. The last layer is removed and replaced with a dense network with 3 neurons each for the 3 outputs.
+	\item Transfer learning with ResNet: The model uses the first layers as the standard ResNet50 model \cite{}. The last layer is removed and replaced with a dense network same as the third model.
+\end{enumerate}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{model_plot_DeepGaze.png}
+\caption{DeepGaze CNN Model}
+\label{fig:pic8}
+\end{figure}
+
+
+\section{Results}
+
+\subsection{DeepGaze Model}
+
+The training and validation results of the DeepGaze model against the DrivFace dataset is as shown in the figure \ref{}. We can see clearly that the model is overfitting the data since the dataset is too small. Hence the training accuracy soon reaches 100 percent while the validation accuracy keeps dropping. This can be resolved by increasing the size of the dataset using data augumentation. We have used the ImageDataGenerator of Keras \cite{} to augument the images before passing them to training. This is done by adding some rotation, translation, shearing, zoom to the images. The horizontal flip is set to false since this modifies the head orientation information in the image. Also, to avoid overfitting dropout regularisation \cite{} technique is added. The results of the training and validation are as shown in the figure ref{}.
+
+
 
 
 

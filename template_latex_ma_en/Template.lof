@@ -2,13 +2,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces The perceptron}}{11}{figure.3.1}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Some common activation functions}}{11}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sigmoid function}}}{11}{figure.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tanh function}}}{11}{figure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RELU function}}}{11}{figure.3.2}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Artificial Neural Network}}{12}{figure.3.3}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Finding a minimum using gradient descent}}{13}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces The perceptron}}{12}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Some common activation functions}}{13}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sigmoid function}}}{13}{figure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tanh function}}}{13}{figure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RELU function}}}{13}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Artificial Neural Network}}{13}{figure.3.3}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Finding a minimum using gradient descent}}{14}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Convolutional layers}}{16}{figure.3.5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Image augumentation}}{21}{figure.5.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{21}{figure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Augumented image}}}{21}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces DeepGaze CNN Model}}{23}{figure.5.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

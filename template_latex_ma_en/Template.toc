@@ -1,30 +1,43 @@
 \contentsline {chapter}{Contents}{3}{chapter*.2}
-\contentsline {chapter}{List of Figures}{4}{chapter*.3}
-\contentsline {chapter}{List of Tables}{5}{chapter*.4}
-\contentsline {chapter}{\nonumberline List of Abbreviations}{6}{chapter*.5}
-\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Problem statement}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Structure of the project}{7}{section.1.2}
-\contentsline {chapter}{\numberline {2}Related work}{9}{chapter.2}
-\contentsline {chapter}{\numberline {3}Background}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Machine learning}{10}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Types}{10}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Features}{11}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}The perceptron}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Artificial Neural Networks}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Training the neural network}{12}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Backpropagation}{12}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Gradient Descent}{12}{subsection.3.4.2}
-\contentsline {subsubsection}{\nonumberline Idea}{13}{section*.6}
-\contentsline {subsubsection}{\nonumberline Estimating the gradient}{13}{section*.7}
-\contentsline {subsubsection}{\nonumberline Batch gradient descent}{14}{section*.8}
-\contentsline {subsubsection}{\nonumberline Stochastic gradient descent}{14}{section*.9}
-\contentsline {subsubsection}{\nonumberline Mini-batch gradient descent}{14}{section*.10}
-\contentsline {chapter}{\numberline {4}Figures}{15}{chapter.4}
-\contentsline {chapter}{\numberline {5}Referencing}{16}{chapter.5}
-\contentsline {chapter}{\numberline {6}Subchapter}{18}{chapter.6}
-\contentsline {section}{\numberline {6.1}sub 1}{18}{section.6.1}
-\contentsline {section}{\numberline {6.2}sub 2}{18}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}sub 2.1}{19}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}sub 2.2}{20}{subsection.6.2.2}
-\contentsline {chapter}{Bibliography}{22}{chapter*.11}
+\contentsline {chapter}{List of Figures}{5}{chapter*.3}
+\contentsline {chapter}{List of Tables}{6}{chapter*.4}
+\contentsline {chapter}{\nonumberline List of Abbreviations}{7}{chapter*.5}
+\contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}Problem statement}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}Structure of the project}{8}{section.1.2}
+\contentsline {chapter}{\numberline {2}Related work}{10}{chapter.2}
+\contentsline {chapter}{\numberline {3}Background}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Machine learning}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Types}{11}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Features}{12}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}The perceptron}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Artificial Neural Networks}{13}{section.3.3}
+\contentsline {section}{\numberline {3.4}Training the neural network}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Backpropagation}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Gradient Descent}{14}{subsection.3.4.2}
+\contentsline {subsubsection}{\nonumberline Idea}{14}{section*.6}
+\contentsline {subsubsection}{\nonumberline Estimating the gradient}{15}{section*.7}
+\contentsline {section}{\numberline {3.5}Types of gradient descents}{15}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Batch gradient descent}{15}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Stochastic gradient descent}{15}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Mini-batch gradient descent}{16}{subsection.3.5.3}
+\contentsline {subsubsection}{\nonumberline Challenges of mini-batch gradient descent}{16}{section*.8}
+\contentsline {section}{\numberline {3.6}Convolutional Neural Networks}{16}{section.3.6}
+\contentsline {chapter}{\numberline {4}Transfer learning}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definition}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Transfer learning methods}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Using pre-trained CNN features}{19}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}By developing a model}{19}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Method}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}DrivFace Dataset}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Preprocess the data}{20}{section.5.2}
+\contentsline {section}{\numberline {5.3}Model}{21}{section.5.3}
+\contentsline {section}{\numberline {5.4}Results}{21}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}DeepGaze Model}{21}{subsection.5.4.1}
+\contentsline {chapter}{\numberline {6}Figures}{24}{chapter.6}
+\contentsline {chapter}{\numberline {7}Referencing}{25}{chapter.7}
+\contentsline {chapter}{\numberline {8}Subchapter}{27}{chapter.8}
+\contentsline {section}{\numberline {8.1}sub 1}{27}{section.8.1}
+\contentsline {section}{\numberline {8.2}sub 2}{27}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}sub 2.1}{28}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}sub 2.2}{29}{subsection.8.2.2}

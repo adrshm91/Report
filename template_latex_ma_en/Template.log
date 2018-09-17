@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.11)  25 JUL 2018 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.11)  16 SEP 2018 18:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -406,32 +406,38 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 25.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 26.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 25.
+(hyperref)                setting the option has no effect on input line 26.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 25.
-(./Template.aux)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 26.
+(./Template.aux
+
+LaTeX Warning: Label `fig:pic7' multiply defined.
+
+)
 \openout1 = `Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count136
 \scratchdimen=\dimen120
@@ -462,7 +468,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -472,23 +478,34 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (./Template.out) (./Template.out)
 \@outlinefile=\write4
 \openout4 = `Template.out'.
 
+LaTeX Info: Redefining \celsius on input line 50.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 50.
 
-<TU_Chemnitz_positiv_gruen.pdf, id=104, 202.89903pt x 132.57831pt>
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 50.
+Package gensymb Info: Using \Omega for \ohm on input line 50.
+
+Package gensymb Warning: Not defining \micro.
+
+<TU_Chemnitz_positiv_gruen.pdf, id=164, 202.89903pt x 132.57831pt>
 File: TU_Chemnitz_positiv_gruen.pdf Graphic file (type pdf)
 
 <use TU_Chemnitz_positiv_gruen.pdf>
-Package pdftex.def Info: TU_Chemnitz_positiv_gruen.pdf used on input line 62.
+Package pdftex.def Info: TU_Chemnitz_positiv_gruen.pdf used on input line 63.
 (pdftex.def)             Requested size: 304.3478pt x 198.86696pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
 
  []
 
@@ -498,32 +515,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--88
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./TU_Ch
 emnitz_positiv_gruen.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 [2
 
 
-] (./Template.toc)
+] (./Template.toc [3
+
+
+])
 \tf@toc=\write5
 \openout5 = `Template.toc'.
 
- [3
-
-
-] (./Template.lof)
+ [4] (./Template.lof)
 \tf@lof=\write6
 \openout6 = `Template.lof'.
 
- [4
+ [5
 
 
 ] (./Template.lot)
 \tf@lot=\write7
 \openout7 = `Template.lot'.
 
- [5
+ [6
 
 
 ]
@@ -540,7 +557,7 @@ Missing character: There is no Â in font cmbx12!
 Missing character: There is no ² in font cmbx12!
 Missing character: There is no Â in font cmbx12!
 Missing character: There is no ² in font cmbx12!
-[6
+[7
 
 
 
@@ -549,356 +566,412 @@ en already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{JDK}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{VM}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{I2C}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{KDE}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{SQL}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{Bash}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{JDK}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{VM}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{I2C}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{KDE}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{SQL}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{Bash}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{JDK}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{VM}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{I2C}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{KDE}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{SQL}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{Bash}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{JDK}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{VM}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{I2C}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{KDE}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{SQL}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{Bash}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{JDK}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{VM}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{I2C}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \onecolumn
+l.153 \onecolumn
                 ]
 chapter 1.
 
-LaTeX Warning: Citation `.' on page 7 undefined on input line 158.
+LaTeX Warning: Citation `noauthor_impact_nodate' on page 8 undefined on input l
+ine 159.
 
 
-LaTeX Warning: Citation `I' on page 7 undefined on input line 162.
+LaTeX Warning: Citation `liang_how_2012' on page 8 undefined on input line 159.
 
 
-LaTeX Warning: Citation `d' on page 7 undefined on input line 162.
+
+LaTeX Warning: Citation `strayer_cell_2003' on page 8 undefined on input line 1
+59.
 
 
-LaTeX Warning: Citation `.' on page 7 undefined on input line 162.
+LaTeX Warning: Citation `lee_speech-based_2001' on page 8 undefined on input li
+ne 159.
 
 
-LaTeX Warning: Citation `c' on page 7 undefined on input line 162.
+LaTeX Warning: Citation `liang_real-time_2007' on page 8 undefined on input lin
+e 159.
 
 
-LaTeX Warning: Citation `' on page 7 undefined on input line 162.
+LaTeX Warning: Citation `.' on page 8 undefined on input line 159.
 
 
-LaTeX Warning: Citation `' on page 7 undefined on input line 162.
+LaTeX Warning: Citation `I' on page 8 undefined on input line 163.
 
 
-LaTeX Warning: Citation `.' on page 7 undefined on input line 162.
+LaTeX Warning: Citation `d' on page 8 undefined on input line 163.
 
 
-LaTeX Warning: Citation `d' on page 7 undefined on input line 169.
+LaTeX Warning: Citation `.' on page 8 undefined on input line 163.
 
-[7
+
+LaTeX Warning: Citation `c' on page 8 undefined on input line 163.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 163.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 163.
+
+
+LaTeX Warning: Citation `.' on page 8 undefined on input line 163.
+
+
+LaTeX Warning: Citation `d' on page 8 undefined on input line 170.
+
+[8
 
 
 
 ]
 
-LaTeX Warning: Citation `' on page 8 undefined on input line 170.
+LaTeX Warning: Citation `' on page 9 undefined on input line 171.
 
 
-LaTeX Warning: Citation `' on page 8 undefined on input line 170.
+LaTeX Warning: Citation `' on page 9 undefined on input line 171.
 
 
-LaTeX Warning: Citation `.' on page 8 undefined on input line 170.
+LaTeX Warning: Citation `.' on page 9 undefined on input line 171.
 
-[8]
+[9]
 chapter 2.
 
-Underfull \hbox (badness 6236) in paragraph at lines 184--185
+Underfull \hbox (badness 6236) in paragraph at lines 185--186
 []\OT1/cmr/m/n/12 Driver Gaze Zone Es-ti-
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 189--189
+Underfull \hbox (badness 1199) in paragraph at lines 190--190
 []\OT1/cmr/m/n/12 Gaze zone es-ti-ma-tion us-
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 191--191
+Underfull \hbox (badness 1009) in paragraph at lines 192--192
 []\OT1/cmr/m/n/12 Driver Gaze Re-gion Es-ti-
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 194--194
+Underfull \hbox (badness 2922) in paragraph at lines 195--195
 []\OT1/cmr/m/n/12 Head pose es-ti-ma-tion in
  []
 
 
-Underfull \hbox (badness 3826) in paragraph at lines 194--194
+Underfull \hbox (badness 3826) in paragraph at lines 195--195
 \OT1/cmr/m/n/12 the wild us-ing Con-vo-lu-
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 194--194
+Underfull \hbox (badness 2591) in paragraph at lines 195--195
 []\OT1/cmr/m/n/12 Head pose es-ti-ma-tion as
  []
 
-[9
+[10
 
 
 ]
 chapter 3.
 
-LaTeX Warning: Citation `.' on page 10 undefined on input line 206.
+LaTeX Warning: Citation `.' on page 11 undefined on input line 207.
 
 
-LaTeX Warning: Citation `.' on page 10 undefined on input line 209.
+LaTeX Warning: Citation `.' on page 11 undefined on input line 210.
 
-[10
+[11
 
 
-] <image3.png, id=221, 593.71812pt x 302.12875pt>
+] <image3.png, id=294, 593.71812pt x 302.12875pt>
 File: image3.png Graphic file (type png)
  <use image3.png>
-Package pdftex.def Info: image3.png used on input line 218.
+Package pdftex.def Info: image3.png used on input line 221.
 (pdftex.def)             Requested size: 256.07744pt x 130.3139pt.
 
-<image4.png, id=224, 628.84938pt x 420.57124pt>
+<image4.png, id=297, 628.84938pt x 420.57124pt>
 File: image4.png Graphic file (type png)
  <use image4.png>
-Package pdftex.def Info: image4.png used on input line 226.
+Package pdftex.def Info: image4.png used on input line 229.
 (pdftex.def)             Requested size: 128.03871pt x 85.62726pt.
 
-<image5.png, id=225, 622.325pt x 411.03563pt>
+<image5.png, id=298, 622.325pt x 411.03563pt>
 File: image5.png Graphic file (type png)
  <use image5.png>
-Package pdftex.def Info: image5.png used on input line 227.
+Package pdftex.def Info: image5.png used on input line 230.
 (pdftex.def)             Requested size: 128.03871pt x 84.56389pt.
 
-<image6.png, id=226, 630.355pt x 421.07312pt>
+<image6.png, id=299, 630.355pt x 421.07312pt>
 File: image6.png Graphic file (type png)
  <use image6.png>
-Package pdftex.def Info: image6.png used on input line 228.
+Package pdftex.def Info: image6.png used on input line 231.
 (pdftex.def)             Requested size: 128.03871pt x 85.53026pt.
- [11 <./image3.png> <./image4.png> <./image5.png> <./image6.png>]
-<image7.png, id=240, 413.545pt x 292.09125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./image3.png>] <image7.png, id=306, 413.545pt x 292.09125pt>
 File: image7.png Graphic file (type png)
- <use image7.png>
-Package pdftex.def Info: image7.png used on input line 243.
+
+<use image7.png>
+Package pdftex.def Info: image7.png used on input line 246.
 (pdftex.def)             Requested size: 256.07744pt x 180.87184pt.
- [12 <./image7.png>] <image1.png, id=248, 246.6816pt x 199.4652pt>
+ [13 <./image4.png> <./image5.png> <./image6.png> <./image7.png>] <image1.png, 
+id=324, 246.6816pt x 199.4652pt>
 File: image1.png Graphic file (type png)
  <use image1.png>
-Package pdftex.def Info: image1.png used on input line 271.
+Package pdftex.def Info: image1.png used on input line 274.
 (pdftex.def)             Requested size: 256.07744pt x 207.08281pt.
- [13 <./image1.png>] [14]
+ [14 <./image1.png>] [15]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 325.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 325.
+
+<image8.png, id=344, 513.92pt x 121.95563pt>
+File: image8.png Graphic file (type png)
+ <use image8.png>
+Package pdftex.def Info: image8.png used on input line 336.
+(pdftex.def)             Requested size: 426.7914pt x 101.2808pt.
+ [16 <./image8.png>] [17]
 chapter 4.
-[15
-
-
-]
-chapter 5.
-[16
-
-
-] [17]
-chapter 6.
 [18
 
 
-] [19] [20] (./Template.bbl [21]
-Underfull \hbox (badness 6758) in paragraph at lines 6--9
-[]\OT1/cmr/m/n/12 The Im-pact of Driver Inat-ten-tion on Near-Crash/Crash Risk:
- An
- []
+] [19]
+chapter 5.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+<image10.jpg, id=370, 642.4pt x 481.8pt>
+File: image10.jpg Graphic file (type jpg)
+ <use image10.jpg>
+Package pdftex.def Info: image10.jpg used on input line 408.
+(pdftex.def)             Requested size: 209.13013pt x 156.8478pt.
+
+<image9.jpg, id=371, 224.84pt x 224.84pt>
+File: image9.jpg Graphic file (type jpg)
+ <use image9.jpg>
+Package pdftex.def Info: image9.jpg used on input line 409.
+(pdftex.def)             Requested size: 157.91072pt x 157.91525pt.
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 6--9
-\OT1/cmr/m/n/12 Anal-y-sis Us-ing the 100-Car Nat-u-ral-is-tic Driv-ing Study D
-ata, []$\OT1/cmtt/m/n/12 https :
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
-\OT1/cmtt/m/n/12 / / www . researchgate . net / publication / 242182089 _ The _
- Impact _ of _
- []
+] <model_plot_DeepGaze.png, id=380, 528.97626pt x 1073.00874pt>
+File: model_plot_DeepGaze.png Graphic file (type png)
+
+<use model_plot_DeepGaze.png>
+Package pdftex.def Info: model_plot_DeepGaze.png used on input line 428.
+(pdftex.def)             Requested size: 256.07744pt x 519.44263pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
-\OT1/cmtt/m/n/12 Driver _ Inattention _ on _ Near-[]CrashCrash _ Risk _ An _ An
-alysis _ Using _
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
-No file Template.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
-[22
+
+LaTeX Warning: Reference `' on page 21 undefined on input line 438.
+
+[21 <./image10.jpg> <./image9.jpg>] [22] [23 <./model_plot_DeepGaze.png>]
+chapter 6.
+[24
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
+chapter 7.
+[25
+
+
+] [26]
+chapter 8.
+[27
+
+
+] [28] [29]
+No file Template.ind.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
+[30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
  (./Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
 Package rerunfilecheck Info: File `Template.out' has not changed.
-(rerunfilecheck)             Checksum: B8DCE5CA6701F71734C8DDC22D10D5C7;1486.
+(rerunfilecheck)             Checksum: 53771E87C3B919635BAA17CAFD5181CB;2580.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
  ) 
 Here is how much of TeX's memory you used:
- 8867 strings out of 492995
- 140958 string characters out of 6132704
- 328574 words of memory out of 5000000
- 12229 multiletter control sequences out of 15000+600000
- 11374 words of font info for 41 fonts, out of 8000000 for 9000
+ 9000 strings out of 492995
+ 142708 string characters out of 6132704
+ 330813 words of memory out of 5000000
+ 12322 multiletter control sequences out of 15000+600000
+ 11205 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,8n,69p,8819b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -912,12 +985,12 @@ cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Template.pdf (22 pages, 454638 bytes).
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Template.pdf (30 pages, 692502 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 505 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 
