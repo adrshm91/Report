@@ -31,10 +31,6 @@
 \BOOKMARK [1][-]{section.5.3}{5.3 Model}{chapter.5}% 31
 \BOOKMARK [1][-]{section.5.4}{5.4 Results}{chapter.5}% 32
 \BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 DeepGaze Model}{section.5.4}% 33
-\BOOKMARK [0][]{chapter.6}{6 Figures}{}% 34
-\BOOKMARK [0][]{chapter.7}{7 Referencing}{}% 35
-\BOOKMARK [0][]{chapter.8}{8 Subchapter}{}% 36
-\BOOKMARK [1][-]{section.8.1}{8.1 sub 1}{chapter.8}% 37
-\BOOKMARK [1][-]{section.8.2}{8.2 sub 2}{chapter.8}% 38
-\BOOKMARK [2][-]{subsection.8.2.1}{8.2.1 sub 2.1}{section.8.2}% 39
-\BOOKMARK [2][-]{subsection.8.2.2}{8.2.2 sub 2.2}{section.8.2}% 40
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 VGGNet and ResNet Model - Transfer learning}{section.5.4}% 34
+\BOOKMARK [0][]{chapter.6}{6 Concluding Remarks}{}% 35
+\BOOKMARK [0][]{chapter*.9}{Bibliography}{}% 36

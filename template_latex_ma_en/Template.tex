@@ -127,19 +127,19 @@ Estimating the head pose of the driver is a crucial as well as one of the diffic
 %---------------------------------------------------------
 
 \chapter{Introduction}
- Driver attention monitoring in real time is a crucial task of advanced driver assistance systems. The driver drowsiness and distraction from the road increases the risk of accident significantly \cite{noauthor_impact_nodate} \cite{liang_how_2012}. The use of in-vehicle information systems (IVISs) such as cell phones, GPS navigation systems, and satellite radios further adds to the risk. \cite{strayer_cell_2003} \cite{lee_speech-based_2001}Hence it is necessary to design driver attention montoring systems. One way this could be helpful is to capture the driver distractions and alert the driver in case of dangerous situations. There has been lot of work done in developing driver attention monitoring in the context of Advanced Driver Assistance Systems(ADAS) \cite{liang_real-time_2007} However, there is no system which generalises the driver head pose estimation across various drivers, cars and perspectives. Convolutional Neural Networks (CNNs) have been successful in various image classification and object detection tasks \cite. In this project, the feasibility of CNNs in driver monitoring systems is analysed. 
+ Driver attention monitoring in real time is a crucial task of advanced driver assistance systems. The driver drowsiness and distraction from the road increases the risk of accident significantly \cite{noauthor_impact_nodate} \cite{liang_how_2012}. The use of in-vehicle information systems (IVISs) such as cell phones, GPS navigation systems, and satellite radios further adds to the risk. \cite{strayer_cell_2003} \cite{lee_speech-based_2001}Hence it is necessary to design driver attention montoring systems. One way this could be helpful is to capture the driver distractions and alert the driver in case of dangerous situations. There has been lot of work done in developing driver attention monitoring in the context of Advanced Driver Assistance Systems(ADAS) \cite{liang_real-time_2007} However, there is no system which generalises the driver head pose estimation across various drivers, cars and perspectives. Convolutional Neural Networks (CNNs) have been successful in various image classification and object detection tasks \cite{krizhevsky_imagenet_2017}. In this project, the feasibility of CNNs in driver monitoring systems is analysed. 
  
 \section{Problem statement}
  
-The aim of this project is to use CNNs to classify the driver gaze zones. However training CNNs from scratch is often time consuming and difficult. It requires learning of millions of parameters and a large number of annotated images for training. Training CNNs for smaller datasets often leads to overfitting. Transfer learning solves this problem by using pre trained weights learnt by CNNs on large scale datasets. \cite In this project, two different networks trained on the ImageNet \cite dataset is fine tuned to classify driver gaze zones in the DrivFace dataset \cite. The DrivFace database  \cite contains images sequences of subjects while driving in real scenarios. It is composed of 606 samples of 640*480 pixels each, acquired over different days from 4 drivers (2 women and 2 men) with several facial features like glasses and beard. The performance of the transfer learning network on DrivFace dataset is compared against Deepgaze \cite , a CNN trained on AFLW dataset \cite .
+The aim of this project is to use CNNs to classify the driver gaze zones. However training CNNs from scratch is often time consuming and difficult. It requires learning of millions of parameters and a large number of annotated images for training. Training CNNs for smaller datasets often leads to overfitting. Transfer learning solves this problem by using pre trained weights learnt by CNNs on large scale datasets. \cite{noauthor_survey_nodate} In this project, two different networks trained on the ImageNet \cite{krizhevsky_imagenet_2012} dataset is fine tuned to classify driver gaze zones in the DrivFace dataset \cite{noauthor_uci_nodate}. The DrivFace database contains images sequences of subjects while driving in real scenarios. It is composed of 606 samples of 640*480 pixels each, acquired over different days from 4 drivers (2 women and 2 men) with several facial features like glasses and beard. The performance of the transfer learning network on DrivFace dataset is compared against Deepgaze \cite{noauthor_head_nodate} , a CNN trained on AFLW dataset \cite{noauthor_icg_nodate}.
 
 \section{Structure of the project}
 The main focus of this project work can be summarised as
 
 \begin{enumerate}
 	\item To study the application of CNNs in head pose estimation of driver inside a car and to verify the robustness of the algorithm against occlusions, illumination changes and different poses of the driver.
-	\item To train and validate the CNN using the approach of transfer learning on the DrivFace \cite dataset with real time dashboard images of drivers inside a car.
-	\item To compare the performance of our CNN against Deepgaze \cite , a CNN trained on AFLW dataset \cite .
+	\item To train and validate the CNN using the approach of transfer learning on the DrivFace \cite{noauthor_uci_nodate} dataset with real time dashboard images of drivers inside a car.
+	\item To compare the performance of our CNN against Deepgaze \cite{noauthor_head_nodate} , a CNN trained on AFLW dataset \cite{noauthor_icg_nodate} .
 	
 \end{enumerate}
 
@@ -154,16 +154,16 @@ The main focus of this project work can be summarised as
 Research study & Objective & Classifier\\
 \hline
 Driver Gaze Zone Estimation using Convolutional Neural Networks:
-A General Framework and Ablative Analysis \cite{} & Gaze zone estimation
+A General Framework and Ablative Analysis \cite{vora_driver_2018} & Gaze zone estimation
 using head pose dynamics & Random Forest\\
 \hline
 On Driver Gaze Estimation: Explorations and Fusion of Geometric and
-Data Driven Approaches \cite{} & Gaze zone estimation using fusion of geometric and learning based  method & SVM\\ 
+Data Driven Approaches \cite{noauthor_driver_nodate} & Gaze zone estimation using fusion of geometric and learning based  method & SVM\\ 
 \hline
-Driver Gaze Region Estimation Without Using Eye Movement \cite{} & Gaze zone estimation
+Driver Gaze Region Estimation Without Using Eye Movement \cite{noauthor_[1507.04760]_nodate} & Gaze zone estimation
 using spatial configurations of facial landmarks & Random Forest\\
 \hline
-Head pose estimation in the wild using Convolutional Neural Networks and adaptive gradient methods \cite{} & Head pose estimation as yaw, pitch and roll angles & CNN\\
+Head pose estimation in the wild using Convolutional Neural Networks and adaptive gradient methods \cite{noauthor_head_nodate}  & Head pose estimation as yaw, pitch and roll angles & CNN\\
 \hline
 \end{tabular}
 \captionof{table}{Related research work on driver head pose estimation}
@@ -178,10 +178,10 @@ A summary of recent studies on head pose estimation is shown in table \ref{tab:t
  
  \section{Machine learning}
  
-Machine learning is used to solve a wide variety of problems in computer vision, speech processing, statistics etc,. It is a subset of artificial intelligence where the computer is shown data to learn patterns and solve the given problem without being explicitly programmed to do so \cite. Computers have been successful in several tasks that were considered impossible by humans. However they fail to do simple tasks such as recognising objects or speech. Hence, machine learning algorithms were designed to infer the result from features of the input. In most of the cases these features needed to be hand-crafted by an expert. The algorithms work better when given better features. As the availability of data and the computational power has increased in the recent years, machine learning has become more and more practical and successful in various application domains.
+Machine learning is used to solve a wide variety of problems in computer vision, speech processing, statistics etc,. It is a subset of artificial intelligence where the computer is shown data to learn patterns and solve the given problem without being explicitly programmed to do so \cite{awad_machine_2015}. Computers have been successful in several tasks that were considered impossible by humans. However they fail to do simple tasks such as recognising objects or speech. Hence, machine learning algorithms were designed to infer the result from features of the input. In most of the cases these features needed to be hand-crafted by an expert. The algorithms work better when given better features. As the availability of data and the computational power has increased in the recent years, machine learning has become more and more practical and successful in various application domains.
 
 \subsection{Types}
-Machine learning algorithms can be broadly classified into supervised learning, unsupervised learning and reinforcement learning. In \textit{supervised learning} the algorithm is trained using labelled training data and then shown with test data to predict the results. For example, in object detection problems a training data set with annotated images is shown to the model through which the model learns the representations and the mapping from input to output. After training the model is able to predict the labels of unseen images. Supervised learning can be further classified into classification and regression. In \textit{classification}, the algorithm tries to predict the discrete output class the input belongs to, whereas in \textit{regression} the output is a continuous value. \textit{Unsupervised learning} is the process of building the model without the help of labelled data. It can also be considered as a problem of clustering a given dataset \cite. The machine learning algorithm needs to separate the set of data points into groups in the best way possible. \textit{Reinforcement learning} uses a system of rewards and punishments. The algorithm learns by interacting with its environment. The algorithm receives rewards for performing correctly and penalties for performing incorrectly. The algorithm learns without the intervention of human by maximising the rewards and minimising the penalties. 
+Machine learning algorithms can be broadly classified into supervised learning, unsupervised learning and reinforcement learning. In \textit{supervised learning} the algorithm is trained using labelled training data and then shown with test data to predict the results. For example, in object detection problems a training data set with annotated images is shown to the model through which the model learns the representations and the mapping from input to output. After training the model is able to predict the labels of unseen images. Supervised learning can be further classified into classification and regression. In \textit{classification}, the algorithm tries to predict the discrete output class the input belongs to, whereas in \textit{regression} the output is a continuous value. \textit{Unsupervised learning} is the process of building the model without the help of labelled data. It can also be considered as a problem of clustering a given dataset. The machine learning algorithm needs to separate the set of data points into groups in the best way possible. \textit{Reinforcement learning} uses a system of rewards and punishments. The algorithm learns by interacting with its environment. The algorithm receives rewards for performing correctly and penalties for performing incorrectly. The algorithm learns without the intervention of human by maximising the rewards and minimising the penalties. 
 
 \subsection{Features}
 
@@ -339,14 +339,14 @@ Given source and target domains \textbf{Ds} and \textbf{Dt} where \textbf{D = (X
 
 \section{Transfer learning methods}
 
-Transfer learning has been investigated in the past \cite{}. With the approach of deep learning there are new methods of transfer learning available.
+Transfer learning has been investigated in the past \cite{noauthor_survey_nodate}. With the approach of deep learning there are new methods of transfer learning available.
 
 \subsection{Using pre-trained CNN features}
 
 %Razavian, A. S., Azizpour, H., Sullivan, J., & Carlsson, S. (2014). CNN features off-the-shelf: An astounding baseline for recognition. IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, 512–519.
 
 This is the most common way of applying transfer learning for a given problem. It is also the method which has been used in this project. The lower layers of the convolutional neural networks capture the low-level image features such as edges, corners etc., while the higher convolutional layers capture more and more complex details such as body parts, faces etc. The final fully connected layers are assumed to capture information that is relevant to solving the respective task for example the classes in case of classification task.
-Thus we can simply use the features of a state-of-the-art CNN pre-trained on ImageNet \cite{} and train a new model on these extracted features. In practice, we keep the earlier layers of the CNN fixed or tune them with very low learning rate so as to not unlearn these features. This simple approach has been shown to achieve great results on various computer vision tasks \cite{}. Therefore, the ImageNet task seems to be a good base for general computer vision problems. 
+Thus we can simply use the features of a state-of-the-art CNN pre-trained on ImageNet \cite{krizhevsky_imagenet_2012} and train a new model on these extracted features. In practice, we keep the earlier layers of the CNN fixed or tune them with very low learning rate so as to not unlearn these features. This simple approach has been shown to achieve great results on various computer vision tasks \cite{noauthor_survey_nodate}.. Therefore, the ImageNet task seems to be a good base for general computer vision problems. 
 
 \subsection{By developing a model}
 
@@ -354,7 +354,7 @@ In this method, a related predictive modelling problem with an abundance of data
 
 \chapter{Method}
 
-The aim of the project is to classify the images into three categories based on the head orientation. For this task, the DrivFace dataset \cite{} is used which contains images of drivers while driving in real scenarios. We will first consider the data preprocessing, the model, the training and then the testing of the model.
+The aim of the project is to classify the images into three categories based on the head orientation. For this task, the DrivFace dataset \cite{noauthor_uci_nodate} is used which contains images of drivers while driving in real scenarios. We will first consider the data preprocessing, the model, the training and then the testing of the model.
 
 \begin{figure}[h]
     \subfigure[Original image]{\includegraphics[width=0.49\textwidth]{image10.jpg} \label{fig:pic1}}
@@ -395,7 +395,7 @@ The data is first augumented using the keras class /textit{ImageDataGenerator}. 
 We have tested the dataset on four models
 
 \begin{enumerate}
-	\item DeepGaze CNN model : The model is derived from the DeepGaze model \cite{}. There are 9 layers and 4,566,147 parameters as shown in \ref{fig:pic8} 
+	\item DeepGaze CNN model : The model is derived from the DeepGaze model \cite{noauthor_head_nodate}. There are 9 layers and 4,566,147 parameters as shown in \ref{fig:pic8} 
 	\item DeepGaze CNN model with data augumentation: The model is same as the first one but the data is augumented before training. 
 	\item Transfer learning with VGGNet: The model uses the first layers as the standard VGGNet model \cite{}. The last layer is removed and replaced with a dense network with 3 neurons each for the 3 outputs.
 	\item Transfer learning with ResNet: The model uses the first layers as the standard ResNet50 model \cite{}. The last layer is removed and replaced with a dense network same as the third model.
@@ -408,12 +408,25 @@ We have tested the dataset on four models
 \label{fig:pic8}
 \end{figure}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{model_plot_VGG.png}
+\caption{VGGNet Model}
+\label{fig:pic14}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{model_plot_Resnet.png}
+\caption{ResNet Model}
+\label{fig:pic15}
+\end{figure}
 
 \section{Results}
 
 \subsection{DeepGaze Model}
 
-The training and validation accuracy results of the DeepGaze model against the DrivFace dataset is as shown in the figure \ref{fig:pic10}. We can see clearly that the model is overfitting the data since the dataset is too small. Hence the training accuracy soon reaches 100 percent while the validation accuracy keeps dropping. This can be resolved by increasing the size of the dataset using data augumentation. We have used the ImageDataGenerator of Keras \cite{} to augument the images before passing them to training. This is done by adding some rotation, translation, shearing, zoom to the images. The horizontal flip is set to false since this modifies the head orientation information in the image. Also, to avoid overfitting dropout regularisation \cite{} technique is added. The results of the training and validation are as shown in the figure \ref{fig:pic11}. The validation accuracy is 84\% with data augumentation which was 62\% without augumentation.
+The training and validation accuracy results of the DeepGaze model against the DrivFace dataset is as shown in the figure \ref{fig:pic10}. We can see clearly that the model is overfitting the data since the dataset is too small. Hence the training accuracy soon reaches 100 percent while the validation accuracy keeps dropping. This can be resolved by increasing the size of the dataset using data augumentation. We have used the ImageDataGenerator of Keras \cite{noauthor_keras_nodate} to augument the images before passing them to training. This is done by adding some rotation, translation, shearing, zoom to the images. The horizontal flip is set to false since this modifies the head orientation information in the image. Also, to avoid overfitting dropout regularisation \cite{srivastava_dropout:_2014} technique is added. The results of the training and validation are as shown in the figure \ref{fig:pic11}. The validation accuracy is 84\% with data augumentation which was 62\% without augumentation.
 
 
 \begin{figure}[h]
@@ -426,27 +439,21 @@ The training and validation accuracy results of the DeepGaze model against the D
 
 \subsection{VGGNet and ResNet Model - Transfer learning}
 
-The training and validation accuracy resultsof the VGGNet and ResNet models are as shown in the figure \ref{fig:pic12} and figure \ref{fig:pic13}. Here, we can see that the problem of overfitting is solved. With the method of transfer learning using VGGNet model, the training and validation curves closely follow each other. But the performance is better with the Resnet model as seen in the figure \ref{fig:pic13}. Also the validation accuracy is 87\% with VGGNet and 89\% with ResNet model. Thus the accuracy problem of the model with less training data is solved by using transfer learning. 
+The training and validation accuracy results of the VGGNet\cite{simonyan_very_2014} and ResNet \cite{noauthor_[1512.03385]_nodate}models are as shown in the figure \ref{fig:pic12} and figure \ref{fig:pic13}. Here, we can see that the problem of overfitting is solved. With the method of transfer learning using VGGNet model, the training and validation curves closely follow each other. But the performance is better with the Resnet model as seen in the figure \ref{fig:pic13}. Also the validation accuracy is 87\% with VGGNet and 89\% with ResNet model. Thus the accuracy problem of the model with less training data is solved by using transfer learning. 
 
 
 
 \chapter{Concluding Remarks}
 %\input{src/example_figures} % Load Data from File example_figures
 
-Head pose estimation is a crucial task in autonomous vehicles since alerting the driver at correct time can prevent several road accidents. It will also help autonomous vehicles to determine the handoff time to the human driver. In this project, various works of head pose estimation were studied. There has been a lot of progress made in head pose estimation systems but not towards systems which can generalize to different drivers, cars, perspective and scale. This model can be further improved by adding several driver gaze zones rather than just three. It was shown that using small datasets causes overfitting and also poor performance. This can be solved by using the approach of transfer learning. We demonstrated that using the state of the art models such as ResNet50, we can solve the overfitting problem and can also achieve significant accuracy. Future work in this direction can use utilize Long Short Term Memory(LSTM) \ref{} which can use information in successive frames. 
- 
-
-\chapter{Referencing}
-% Alternativ just write your text under \chapter like this example
-
-
+Head pose estimation is a crucial task in autonomous vehicles since alerting the driver at correct time can prevent several road accidents. It will also help autonomous vehicles to determine the handoff time to the human driver. In this project, various works of head pose estimation were studied. There has been a lot of progress made in head pose estimation systems but not towards systems which can generalize to different drivers, cars, perspective and scale. This model can be further improved by adding several driver gaze zones rather than just three. It was shown that using small datasets causes overfitting and also poor performance. This can be solved by using the approach of transfer learning. We demonstrated that using the state of the art models such as ResNet50, we can solve the overfitting problem and can also achieve significant accuracy. Future work in this direction can use utilize Long Short Term Memory(LSTM) \cite{noauthor_long_nodate} which can use information in successive frames. 
 
 %---------------------------------------------------------
 % bibliography based on Springer Design
 %---------------------------------------------------------
 
-%\bibliographystyle{splncs03}
-%\bibliography{C:\\Users\\adarsh\\Documents\\Research_Project\\New folder\\Report\\Report\\template_latex_ma_en\\bibliography.bib}
+\bibliographystyle{splncs03}
+\bibliography{/Users/adarshmallandur/Desktop/bibliography}
 
 \printindex
 

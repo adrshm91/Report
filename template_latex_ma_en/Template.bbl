@@ -1,11 +1,65 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
+\bibitem{noauthor_[1507.04760]_nodate}
+[1507.04760] {Driver} {Gaze} {Region} {Estimation} {Without} {Using} {Eye}
+  {Movement}, \url{https://arxiv.org/abs/1507.04760}
+
+\bibitem{noauthor_[1512.03385]_nodate}
+[1512.03385] {Deep} {Residual} {Learning} for {Image} {Recognition},
+  \url{https://arxiv.org/abs/1512.03385}
+
+\bibitem{noauthor_head_nodate}
+Head pose estimation in the wild using {Convolutional} {Neural} {Networks} and
+  adaptive gradient methods - {ScienceDirect},
+  \url{https://www.sciencedirect.com/science/article/pii/S0031320317302327}
+
+\bibitem{noauthor_icg_nodate}
+{ICG} - {AFLW},
+  \url{https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/aflw/}
+
 \bibitem{noauthor_impact_nodate}
 The {Impact} of {Driver} {Inattention} on {Near}-{Crash}/{Crash} {Risk}: {An}
-  {Analysis} {Using} the 100-{Car} {Naturalistic} {Driving} {Study} {Data},
+  {Analysis} {Using} the 100-{Car} {Naturalistic} {Driving} {Study} {Data}.
   \url{https://www.researchgate.net/publication/242182089_The_Impact_of_Driver_Inattention_on_Near-CrashCrash_Risk_An_Analysis_Using_the_100-Car_Naturalistic_Driving_Study_Data}
+
+\bibitem{noauthor_keras_nodate}
+Keras {Documentation}, \url{https://keras.io/}
+
+\bibitem{noauthor_long_nodate}
+Long {Short}-{Term} {Memory}, \url{https://dl.acm.org/citation.cfm?id=1246450}
+
+\bibitem{noauthor_driver_nodate}
+On driver gaze estimation: {Explorations} and fusion of geometric and data
+  driven approaches - {IEEE} {Conference} {Publication},
+  \url{https://ieeexplore.ieee.org/abstract/document/7795623/}
+
+\bibitem{noauthor_survey_nodate}
+A {Survey} on {Transfer} {Learning} - {IEEE} {Journals} \& {Magazine},
+  \url{https://ieeexplore.ieee.org/document/5288526/}
+
+\bibitem{noauthor_uci_nodate}
+{UCI} {Machine} {Learning} {Repository}: {DrivFace} {Data} {Set},
+  \url{https://archive.ics.uci.edu/ml/datasets/DrivFace}
+
+\bibitem{awad_machine_2015}
+Awad, M., Khanna, R.: Machine {Learning}. In: Awad, M., Khanna, R. (eds.)
+  Efficient {Learning} {Machines}: {Theories}, {Concepts}, and {Applications}
+  for {Engineers} and {System} {Designers}, pp. 1--18. Apress, Berkeley, CA
+  (2015), \url{https://doi.org/10.1007/978-1-4302-5990-9_1}
+
+\bibitem{krizhevsky_imagenet_2012}
+Krizhevsky, A., Sutskever, I., Hinton, G.E.: {ImageNet} {Classification} with
+  {Deep} {Convolutional} {Neural} {Networks}. In: Pereira, F., Burges, C.J.C.,
+  Bottou, L., Weinberger, K.Q. (eds.) Advances in {Neural} {Information}
+  {Processing} {Systems} 25, pp. 1097--1105. Curran Associates, Inc. (2012),
+  \url{http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
+
+\bibitem{krizhevsky_imagenet_2017}
+Krizhevsky, A., Sutskever, I., Hinton, G.E.: {ImageNet} classification with
+  deep convolutional neural networks. Communications of the ACM  60(6),  84--90
+  (May 2017), \url{http://dl.acm.org/citation.cfm?doid=3098997.3065386}
 
 \bibitem{lee_speech-based_2001}
 Lee, J.D., Caven, B., Haake, S., Brown, T.L.: Speech-based interaction with
@@ -23,9 +77,26 @@ Liang, Y., Lee, J.D., Yekhshatyan, L.: How dangerous is looking away from the
   road? {Algorithms} predict crash risk from glance patterns in naturalistic
   driving. Human Factors  54(6),  1104--1116 (Dec 2012)
 
+\bibitem{simonyan_very_2014}
+Simonyan, K., Zisserman, A.: Very {Deep} {Convolutional} {Networks} for
+  {Large}-{Scale} {Image} {Recognition}. arXiv:1409.1556 [cs]  (Sep 2014),
+  \url{http://arxiv.org/abs/1409.1556}, arXiv: 1409.1556
+
+\bibitem{srivastava_dropout:_2014}
+Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., Salakhutdinov, R.:
+  Dropout: {A} {Simple} {Way} to {Prevent} {Neural} {Networks} from
+  {Overfitting}. Journal of Machine Learning Research  15,  1929--1958 (2014),
+  \url{http://jmlr.org/papers/v15/srivastava14a.html}
+
 \bibitem{strayer_cell_2003}
 Strayer, D.L., Drews, F.A., Johnston, W.A.: Cell phone-induced failures of
   visual attention during simulated driving. Journal of Experimental
   Psychology. Applied  9(1),  23--32 (Mar 2003)
+
+\bibitem{vora_driver_2018}
+Vora, S., Rangesh, A., Trivedi, M.M.: Driver {Gaze} {Zone} {Estimation} using
+  {Convolutional} {Neural} {Networks}: {A} {General} {Framework} and {Ablative}
+  {Analysis}. arXiv:1802.02690 [cs]  (Feb 2018),
+  \url{http://arxiv.org/abs/1802.02690}, arXiv: 1802.02690
 
 \end{thebibliography}

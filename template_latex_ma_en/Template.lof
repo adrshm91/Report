@@ -12,10 +12,15 @@
 \contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Convolutional layers}}{16}{figure.3.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Image augumentation}}{21}{figure.5.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{21}{figure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Augumented image}}}{21}{figure.5.1}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces DeepGaze CNN Model}}{23}{figure.5.2}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Image augumentation}}{20}{figure.5.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original image}}}{20}{figure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Augumented image}}}{20}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces DeepGaze CNN Model}}{22}{figure.5.2}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces VGGNet Model}}{23}{figure.5.3}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces ResNet Model}}{23}{figure.5.4}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Training vs validation accuracy of the four models}}{24}{figure.5.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {DeepGaze Model without data augumentation}}}{24}{figure.5.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {DeepGaze Model with data augumentation}}}{24}{figure.5.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VGG16 Model}}}{24}{figure.5.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {ResNet50}}}{24}{figure.5.5}
 \addvspace {10\p@ }
